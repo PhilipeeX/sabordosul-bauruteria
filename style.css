@@ -1,0 +1,11 @@
+.fundo {
+    background-color: #ff0000;
+}
+
+div.topo {
+    width: 100px;
+    background-color: #0000ff;
+    margin: 20px;
+    border: 20px;
+    padding: 500px;
+}
