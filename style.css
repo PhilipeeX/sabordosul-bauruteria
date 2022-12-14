@@ -1,11 +1,107 @@
-.fundo {
-    background-color: #ff0000;
+body {
+    background-color: #ffffff;
+    font-family: 'Open Sans', 'icones', sans-serif;
 }
 
-div.topo {
-    width: 100px;
-    background-color: #0000ff;
-    margin: 20px;
-    border: 20px;
-    padding: 500px;
+.cabecalho {
+    background-color: #000000;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+}
+
+.cabecalho__menu i::before {
+    content: "\e904";
+    font-size: 24px;
+}
+
+.cabecalho__logo {
+    width: 160px;
+}
+
+.cabecalho__carrinho i::before {
+    content: "\e901";
+    font-size: 24px;
+}
+
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+
+.menu-lateral {
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 70vw;
+    height: 100vh;
+    position: absolute;
+    left: -100vw;
+    transition: .25s;
+}
+
+.menu-lateral--ativo {
+    left: 0;
+    transition: .25s;
+}
+
+.menu-lateral__logo {
+    width: 150px;
+    align-self: center;
+    padding: 16px;
+}
+
+.menu-lateral__link {
+    height: 60px;
+    text-decoration: none;
+    color: #95999C;
+    padding-left: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-lateral__link--ativo {
+    color: #ffffff;
+    padding-left: 50px;
+    border-left: 8px solid #ffffff;
+}
+
+.menu-lateral__link::before {
+    content: "\e904";
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    position: absolute;
+    left: 24px;
+}
+
+.menu-lateral__link--cardapio {
+    content: "";
+}
+
+.menu-lateral__link--promocoes {
+    content: "";
+}
+.menu-lateral__link--carrinho {
+    content: "";
+}
+.menu-lateral__link--pedidos {
+    content: "";
+}
+.menu-lateral__link--conta {
+    content: "";
+}
+.menu-lateral__link--localizacao {
+    content: "";
+}
+.menu-lateral__link--area-de-entrega {
+    content: "";
+}
+.menu-lateral__link--pedir-por-telefone {
+    content: "";
 }
