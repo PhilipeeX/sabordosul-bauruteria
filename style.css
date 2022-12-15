@@ -1,6 +1,7 @@
 body {
     background-color: #ffffff;
     font-family: 'Open Sans', 'icones', sans-serif, "Font Awesome 6 Free";
+    background-image: url("./imagens/bauruteria-background.jpg")
 }
 
 .cabecalho {
@@ -119,5 +120,11 @@ body {
 }
 
 .principal {
-    background-image: url(imagens\bauruteria-background.jpeg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logotipo-principal button {
+    display: flex;
 }
