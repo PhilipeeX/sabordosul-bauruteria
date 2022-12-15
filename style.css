@@ -1,11 +1,10 @@
 body {
-    background-color: #ffffff;
+    background-color: #646464;
     font-family: 'Open Sans', 'icones', sans-serif, "Font Awesome 6 Free";
-    background-image: url("./imagens/bauruteria-background.jpg")
 }
 
 .cabecalho {
-    background-color: #000000;
+    background-color: #1c1c1c;
     display: flex;
     color: white;
     justify-content: space-between;
