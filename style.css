@@ -1,6 +1,6 @@
 body {
     background-color: #ffffff;
-    font-family: 'Open Sans', 'icones', sans-serif;
+    font-family: 'Open Sans', 'icones', sans-serif, "Font Awesome 6 Free";
 }
 
 .cabecalho {
@@ -12,25 +12,31 @@ body {
     padding: 8px 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
 }
-
 .cabecalho__menu i::before {
-    content: "\e904";
+    font-weight: 900;
+    content: "\f0c9";
     font-size: 24px;
+    font-style: normal;
+    cursor: pointer;
 }
 
 .cabecalho__logo {
     width: 160px;
+    cursor: pointer;
 }
 
 .cabecalho__carrinho i::before {
-    content: "\e901";
+    font-weight: 900;
+    content: "\f217";
     font-size: 24px;
+    font-style: normal;
+    cursor: pointer;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'icones';
     src: url(../font/icones.ttf);
-}
+} */
 
 .menu-lateral {
     background-color: #212121;
@@ -72,7 +78,6 @@ body {
 }
 
 .menu-lateral__link::before {
-    content: "\e904";
     width: 24px;
     height: 24px;
     font-size: 24px;
@@ -80,28 +85,39 @@ body {
     left: 24px;
 }
 
-.menu-lateral__link--cardapio {
-    content: "";
+.menu-lateral__link--cardapio::before {
+    font-weight: 900;
+    content: "\f805";
 }
 
-.menu-lateral__link--promocoes {
-    content: "";
+.menu-lateral__link--promocoes::before {
+    font-weight: 900;
+    content: "\f81d";
 }
-.menu-lateral__link--carrinho {
-    content: "";
+.menu-lateral__link--carrinho::before {
+    font-weight: 900;
+    content: "\f07a";
 }
-.menu-lateral__link--pedidos {
-    content: "";
+.menu-lateral__link--pedidos::before {
+    font-weight: 900;
+    content: "\f04a";
 }
-.menu-lateral__link--conta {
-    content: "";
+.menu-lateral__link--conta::before {
+    content: "\f2bb";
 }
-.menu-lateral__link--localizacao {
-    content: "";
+.menu-lateral__link--localizacao::before {
+    font-weight: 900;
+    content: "\f5a0";
 }
-.menu-lateral__link--area-de-entrega {
-    content: "";
+.menu-lateral__link--area-de-entrega::before {
+    font-weight: 900;
+    content: "\f57d";
 }
-.menu-lateral__link--pedir-por-telefone {
-    content: "";
+.menu-lateral__link--pedir-por-telefone::before {
+    font-weight: 900;
+    content: "\f3cd";
+}
+
+.principal {
+    background-image: url(imagens\bauruteria-background.jpeg);
 }
