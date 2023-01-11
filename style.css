@@ -1,14 +1,15 @@
 body {
-    background-color: #646464;
     font-family: 'Open Sans', 'icones', sans-serif, "Font Awesome 6 Free";
 }
 
+@media screen and (max-width: 800px) {
+ 
 .cabecalho {
     background-color: #1c1c1c;
     display: flex;
     color: white;
-    justify-content: space-between;
     align-items: center;
+    gap: 16px;
     padding: 8px 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
 }
@@ -20,18 +21,24 @@ body {
     cursor: pointer;
 }
 
-.cabecalho__logo {
+.bem-vindo {
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0 auto;
+    padding: 8px;
+}
+/* .cabecalho__logo {
     width: 160px;
     cursor: pointer;
-}
+} */
 
-.cabecalho__carrinho i::before {
+/* .cabecalho__carrinho i::before {
     font-weight: 900;
     content: "\f217";
     font-size: 24px;
     font-style: normal;
     cursor: pointer;
-}
+} */
 
 /* @font-face {
     font-family: 'icones';
@@ -44,7 +51,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 70vw;
+    width: 60vw;
     height: 100vh;
     position: absolute;
     left: -100vw;
@@ -118,12 +125,43 @@ body {
     content: "\f3cd";
 }
 
+main {
+    background-image: url(./imagens/background-880px-jpeg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .principal {
     display: flex;
-    justify-content: center;
+}
+
+.menu-principal {
+    padding-top: 64px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
 }
 
-.logotipo-principal button {
+.div-logo-principal {
+    max-width: 400px;
+}
+
+.logo-principal {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.texto-e-botoes-menu-principal {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+}
+
+.botao-pedido-online {
+}
+   
 }
